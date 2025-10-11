@@ -1,0 +1,70 @@
+.kontaky-page-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.kontakty-data-container{
+  margin: 0 80px;
+}
+
+.kontakty-data-grid{
+  display: grid;
+  grid-template-columns: 310px 310px 310px 310px;
+  grid-template-rows: 150px 150px;
+  column-gap: 40px;
+  height: 220px
+}
+
+.data-item-container{
+  display: flex;
+  flex-direction: column;
+  /*border: 1px solid gray;*/ 
+  justify-content: center;
+  padding-left: 30px;
+  height: 150px;
+  position:relative;
+  box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.152);
+  background-color: white;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.data-item-name{
+  color: rgba(0, 128, 0, 0.616);
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+  transition: color .2s;
+}
+
+.data-item-value{
+  font-size: 21px;
+  font-weight: 600;
+  color: rgb(33, 33, 33);
+  width: 250px;
+  transition: color .2s;
+}
+
+.data-item-container:hover{
+  transform: translate( 0 , -4%);
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.389) ;
+}
+
+.data-item-container:hover .data-item-name{
+  color: rgba(0, 128, 0, 0.878);  
+}
+
+.data-item-container:hover .data-item-value{
+  color: black;
+}
+
+.map-container{
+  height: 650px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+
+
