@@ -2,10 +2,10 @@ import {Link, NavLink} from 'react-router'
 import ElizzaLogo from '../assets/elizza logo.jpg'
 import './MainMenu.css'
 
-
+export const items = ['Mládež', 'Uplynulé sezóny',  'Zápisy výboru a turnaje', 'Kontakty'];
 
 export function MainMenu() {
-  const items = ['Mládež', 'Uplynulé sezóny',  'Zápisy výboru a turnaje', 'Kontakty'];
+  
   return (
     <div className="main-menu">
       <Link to='/'>

@@ -4,15 +4,16 @@
 }
 
 .kontakty-data-container{
-  margin: 0 80px;
+  padding: 0 7%;
 }
 
 .kontakty-data-grid{
   display: grid;
-  grid-template-columns: 310px 310px 310px 310px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 150px 150px;
   column-gap: 40px;
-  height: 220px
+  height: 150px;
+  
 }
 
 .data-item-container{
@@ -20,11 +21,11 @@
   flex-direction: column;
   /*border: 1px solid gray;*/ 
   justify-content: center;
-  padding-left: 30px;
+  padding-left: 25px;
   height: 150px;
   position:relative;
   box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.152);
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 2px;
   cursor: pointer;
   transition: transform .2s, box-shadow .2s;
@@ -61,7 +62,6 @@
 
 .map-container{
   height: 650px;
-  background-color: white;
   display: flex;
   align-items: center;
 }
