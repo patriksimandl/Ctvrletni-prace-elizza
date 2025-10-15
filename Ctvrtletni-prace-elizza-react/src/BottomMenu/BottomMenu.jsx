@@ -1,7 +1,5 @@
 import{NavLink} from 'react-router'
 import './BottomMenu.css'
-import ElizzaLogoWhtie from '../assets/elizza-logo-white-removebg-preview.png'
-import PrahaLogo from '../assets/Praha-11-logo-removebg-preview.png'
 import { items } from '../MainMenu/MainMenu'
 
 

@@ -1,13 +1,12 @@
-import { BottomMenu } from "../../BottomMenu/BottomMenu"
 import { MainMenu } from "../../MainMenu/MainMenu"
+import { BottomMenu } from "../../BottomMenu/BottomMenu"
 
 
-export function HomePage(){
+export function UplynuleSezony () {
   return(
     <>
       <MainMenu />
       <BottomMenu />
-      
     </>
   )
 }

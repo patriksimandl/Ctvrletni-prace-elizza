@@ -4,7 +4,7 @@
 }
 
 .kontakty-data-container{
-  padding: 0 7%;
+  padding: 0 5%;
 }
 
 .kontakty-data-grid{
@@ -19,9 +19,9 @@
 .data-item-container{
   display: flex;
   flex-direction: column;
-  /*border: 1px solid gray;*/ 
   justify-content: center;
   padding-left: 25px;
+  padding-right: 25px;
   height: 150px;
   position:relative;
   box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.152);
