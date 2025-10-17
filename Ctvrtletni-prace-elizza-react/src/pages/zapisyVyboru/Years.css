@@ -1,0 +1,15 @@
+.year-link{
+  border: 1px solid black;
+  display: flex;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  border-radius: 10px;
+  height: 50px;
+}
+
+.year-link:hover{
+  transform: translateY(-20%);
+}

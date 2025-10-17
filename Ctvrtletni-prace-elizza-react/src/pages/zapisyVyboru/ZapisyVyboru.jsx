@@ -4,6 +4,7 @@ import { zapisy, years } from "../../data/zapisyVyboru";
 import{useState} from 'react'
 import {Link} from 'react-router'
 import { Years } from "./Years";
+import './ZapisyVyboru.css'
 
 
 export function ZapisyVyboru(){

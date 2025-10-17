@@ -1,14 +1,12 @@
 import { Link } from 'react-router'
-import OpenIcon from '../../assets/icons/Open-in-new-icon.svg'
-
+import ArrowIcon from '../../assets/icons/arrow_right.svg'
+import './Years.css'
 
 export function Years({ year }) {
   return (
-    <div>
-      <Link target='_blank'>
+      <Link className='year-link' to={`/zápisy výboru a turnaje/${year}`}>
         {year}
-        <img src={OpenIcon}></img>
+        <img src={ArrowIcon}></img>
       </Link>
-    </div>
   )
 }
