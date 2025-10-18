@@ -1,6 +1,7 @@
 .kontaky-page-container{
   display: flex;
   flex-direction: column;
+  margin-top: 140px;
 }
 
 .kontakty-data-container{

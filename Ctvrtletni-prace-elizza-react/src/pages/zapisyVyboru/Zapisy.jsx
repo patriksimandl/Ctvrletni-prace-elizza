@@ -5,6 +5,8 @@ import OpenInNewIcon from '../../assets/icons/Open-in-new-icon.svg'
 import './Zapisy.css'
 import Harimoto from '../../assets/Images/harimoto-celebration.avif'
 import { BottomMenu } from '../../BottomMenu/BottomMenu';
+import Malong from '../../assets/Images/Malong-celebration.avif'
+
 
 export function Zapisy() {
   const params = useParams();
@@ -20,8 +22,10 @@ export function Zapisy() {
 
 
       <div className='zapisy-page-container'>
+        <div className="gradiant"/>
         <img src={Harimoto} className='background-image' />
         <div className='links-container'>
+        <div className="green-gradiant"></div>
 
 
           {zapisy.map((item) => {
@@ -39,8 +43,10 @@ export function Zapisy() {
             }
           })}
         </div>
+        
       </div>
       <BottomMenu />
+      
     </>
   )
 }

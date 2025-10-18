@@ -8,8 +8,38 @@
   font-size: 22px;
   border-radius: 10px;
   height: 50px;
+  position: relative;
 }
 
-.year-link:hover{
-  transform: translateY(-20%);
+.year-link-year{
+  background-color: white;
+  z-index: 10;
+  padding: 4px;
 }
+
+.year-link-arrow-image{
+  transition: transform .2s;
+  z-index: 9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 3px;
+  transform: translate(-50%,-50%);
+}
+
+.transform-right{
+  transform:  translate(-50%,-50%)
+  translateX(140%);
+}
+
+.transform-left{
+  transform:  translate(-50%,-50%) translateX(0%);
+}
+
+/*@keyframes arrowMove{/*it is like write animation timeline => it sets keyframes of animation*/
+
+
+
+
+
+
