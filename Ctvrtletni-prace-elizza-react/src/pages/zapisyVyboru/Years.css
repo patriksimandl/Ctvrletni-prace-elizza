@@ -1,20 +1,28 @@
+
 .year-link{
-  border: 1px solid black;
   display: flex;
   text-decoration: none;
-  color: black;
+  color:rgba(0, 0, 0, 0.664);
+  color: white;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  border-radius: 10px;
-  height: 50px;
+  justify-content: start;
+  height: 51px;
+  background-color: rgba(0, 90, 0, 0.759);
+  border-radius: 4px;
+  font-size: 19px;
+  width: 100%;
+  box-shadow: 4px 3px 7px rgba(19, 19, 19, 0.4);
+  transition: background-color .3s ,  color .2s, box-shadow .2s;
+  font-weight: 600;
   position: relative;
+  z-index: 9;
 }
 
 .year-link-year{
-  background-color: white;
   z-index: 10;
   padding: 4px;
+  margin-left: 20px;
 }
 
 .year-link-arrow-image{
@@ -22,14 +30,14 @@
   z-index: 9;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 30%;
   padding: 3px;
-  transform: translate(-50%,-50%);
+  filter: invert();
 }
 
 .transform-right{
   transform:  translate(-50%,-50%)
-  translateX(140%);
+  translateX(100px);
 }
 
 .transform-left{
@@ -37,6 +45,9 @@
 }
 
 /*@keyframes arrowMove{/*it is like write animation timeline => it sets keyframes of animation*/
+
+
+
 
 
 

@@ -1,7 +1,4 @@
 
-body{
-}
-
 .zapisy-page-container{
   position: relative;
   margin-top:97px;
@@ -9,7 +6,7 @@ body{
 
 .gradiant{
   width: 100%;
-  height: 550px;
+  height: 450px;
   position: absolute;
   top:-43px;
   left: 0;
@@ -33,7 +30,7 @@ body{
   zoom: .2;
   width: 100%;
   object-fit: cover;
-  height: 4500px;
+  height: 4250px;
   filter: grayscale(100%)
   blur(10px);
   opacity: .40;
@@ -41,7 +38,7 @@ body{
 
 .links-container{
   position: absolute;
-  margin-top: 50px;
+  margin-top: 65px;
   top: 0;
   width: 100%;
   display: flex;
@@ -60,17 +57,15 @@ body{
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
+  
   height: 27px;
   padding: 12px 20px;
-  border: 1px solid rgba(0, 0, 0, 0);
   background-color: rgba(0, 90, 0, 0.759);
   border-radius: 4px;
   font-size: 19px;
   width: 50%;
   box-shadow: 4px 3px 7px rgba(19, 19, 19, 0.4);
   transition: background-color .3s ,  color .2s, box-shadow .2s;
-  display: flex;
   justify-content: space-between;
   font-weight: 600;
 }

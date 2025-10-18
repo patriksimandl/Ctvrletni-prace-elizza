@@ -24,8 +24,9 @@ export function Zapisy() {
       <div className='zapisy-page-container'>
         <div className="gradiant"/>
         <img src={Harimoto} className='background-image' />
+        <div className="green-gradiant"/>
         <div className='links-container'>
-        <div className="green-gradiant"></div>
+        
 
 
           {zapisy.map((item) => {
