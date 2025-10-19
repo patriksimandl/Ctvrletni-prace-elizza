@@ -19,14 +19,15 @@
   width: 100%;
   position: absolute;
   background-image: linear-gradient(to bottom, transparent,rgba(0, 90, 0, 0.979));
-  top:454.5px;
+  top:454px;
+  z-index: 0;
 }
 
 
 
 .background-image{
   top: -43px;
-  z-index: 0;
+  z-index: -2;
   zoom: .2;
   width: 100%;
   object-fit: cover;
