@@ -1,17 +1,39 @@
 import {Link, NavLink} from 'react-router'
+import { useEffect, useState } from 'react'
 import ElizzaLogo from '../assets/elizza logo.jpg'
+import burgerMenu from '../assets/icons/burger-menu.svg'
 import './MainMenu.css'
 
 export const items = ['Mládež', 'Uplynulé sezóny',  'Zápisy výboru a turnaje', 'Kontakty'];
 
 export function MainMenu() {
-  
+  const [burgerMenuActive,setBurgerMenuActive] = useState(false);  
+
+
+  const burgerMenuVisible = ( )=>{
+    setBurgerMenuActive(!burgerMenuActive);
+  }
+
+  useEffect(()=>{
+    console.log(burgerMenuActive);
+  },[burgerMenuActive])
+
   return (
+    <>
     <div className="main-menu">
       <Link to='/'>
         <img className='logo' src={ElizzaLogo} />
       </Link>
+      
+
       <div className="main-menu-right-container">
+        <img 
+          className='burger-menu' 
+          src={burgerMenu}
+          onClick={burgerMenuVisible}
+        />
+        
+        <div></div>
         {items.map((item)=>{
           return(
             <NavLink 
@@ -25,6 +47,23 @@ export function MainMenu() {
         })}
       </div>
       
+      
     </div>
+    <div className={`dropdown-links-container ${burgerMenuActive? 'dropdown-links-container-active' : ''}`} >
+      {items.map((item)=>{
+        return(
+          <NavLink 
+            className='dropdown-link'
+            key={item}
+            to={`/${item.toLowerCase()}`} 
+          >
+            
+          {item}
+          </NavLink>
+        )
+        
+      })}
+    </div>
+    </>
   );
 }

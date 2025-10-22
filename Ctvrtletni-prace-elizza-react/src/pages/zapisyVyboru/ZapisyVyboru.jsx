@@ -8,9 +8,9 @@ import './ZapisyVyboru.css'
 import Harimoto from '../../assets/Images/harimoto-celebration.avif'
 
 
-export function ZapisyVyboru() {
+export function ZapisyVyboru({winWidth,setWinWidth}) {
   const [zapisyVyboru, setZapisy] = useState(zapisy);
-  const [winWidth, setWinWidth] = useState(window.innerWidth);
+  
 
   useEffect(() => {
     const handleResize = () => {
