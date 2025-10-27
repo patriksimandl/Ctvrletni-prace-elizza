@@ -20,11 +20,67 @@
   height: 100%;
 }
 
+
 .burger-menu{
 	display: none;
 	height: 36px;
 	cursor: pointer;
 
+}
+
+.burger-menu-c{
+	padding: 5px;
+	width: 50px;
+	display: none;
+	position: relative;
+	flex-direction: column;
+	height: 50px;
+}
+
+.burger-menu-block{
+	transform-origin: center center;
+	left: 10px;
+	height: 2.5px;
+	padding: 0 16px;
+	background-color: black;
+	margin: 3px 0;
+	border-radius: 3px;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: transform .2s;
+}
+
+.burger-menu-block1{
+	position: absolute;
+	
+	top: 16px
+	
+}
+
+.burger-menu-block2{
+	position: absolute;
+	top: 26px;
+	transition: padding .2s; 
+}
+
+.burger-menu-block3{
+	position: absolute;
+	top: 36px;
+	
+	
+}
+
+.burger-menu-active .burger-menu-block1{
+	transform: translateX(-50%) translateY(10px)rotate(45deg) ;
+	
+}
+
+.burger-menu-active .burger-menu-block2{
+	padding: 0;
+}
+
+.burger-menu-active .burger-menu-block3{
+	transform: translateX(-50%) translateY(-10px) rotate(-45deg) ;
 }
 
 
@@ -77,20 +133,22 @@
 	top: 81.5px;
 	background-color: rgb(255, 255, 255);
 	width: 100%;
-	z-index: 14;
-	display:none;
+	z-index: 99;
+	display:flex;
 	flex-direction: column;
 	font-size: 18px;
 	font-weight: 500;
 	padding-bottom: 12px;
 	align-items: center;
+	transition: transform .1s;
 	/*it needs to display none to not be viisible and then turn into fixed flexbox*/
 }
 
 
-
 .dropdown-links-container-active{
 	display: flex;
+	height: auto;
+	transform: translateY(-100%);
 }
 
 .dropdown-link{
@@ -117,7 +175,6 @@
 		margin-left: 3%;
 	}
 	.burger-menu{
-		display: none;
 	}
 }
 
@@ -129,8 +186,8 @@
 
 @media  (max-width: 800px){
 	
-	.burger-menu{
-		display: inline-block;
+	.burger-menu-c{
+		display: flex;
 	}
 
 

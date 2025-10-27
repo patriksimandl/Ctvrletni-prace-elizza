@@ -9,9 +9,8 @@ export const items = ['Mládež', 'Uplynulé sezóny',  'Zápisy výboru a turna
 export function MainMenu() {
   const [burgerMenuActive,setBurgerMenuActive] = useState(false);  
 
-
-  const burgerMenuVisible = ( )=>{
-    setBurgerMenuActive(!burgerMenuActive);
+  const burgerMenuVisible = async( )=>{
+    setBurgerMenuActive(await !burgerMenuActive);
   }
 
   useEffect(()=>{
@@ -27,11 +26,14 @@ export function MainMenu() {
       
 
       <div className="main-menu-right-container">
-        <img 
-          className='burger-menu' 
-          src={burgerMenu}
+        <div className={`burger-menu-c ${burgerMenuActive?'' : 'burger-menu-active' }`}
           onClick={burgerMenuVisible}
-        />
+        >
+          <div className='burger-menu-block burger-menu-block1'></div>
+          <div className='burger-menu-block burger-menu-block2'></div>
+          <div className='burger-menu-block burger-menu-block3'></div>
+        </div>
+        
         
         <div></div>
         {items.map((item)=>{
