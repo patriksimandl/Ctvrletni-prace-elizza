@@ -43,7 +43,7 @@ export function Kontaky() {
           </div>
         </div>
         <div className="map-container">
-          <iframe src={"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1297.5247650019944!2d14.518600126672688!3d50.03312662160899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b92159004e693%3A0x7ba31074b268e260!2sTTC%20Elizza%20Praha%2C%20z.s.!5e0!3m2!1scs!2scz!4v1760183425612!5m2!1scs!2scz"} width={'100%'} height={"500"} style={{ border: '0' }} allowFullScreen={''} loading={"lazy"} referrerPolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src={"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1297.5247650019944!2d14.518600126672688!3d50.03312662160899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b92159004e693%3A0x7ba31074b268e260!2sTTC%20Elizza%20Praha%2C%20z.s.!5e0!3m2!1scs!2scz!4v1760183425612!5m2!1scs!2scz"} width={'100%'} height={"500"} style={{ border: '0',zIndex: '20' }} allowFullScreen={''} loading={"lazy"} referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
       </div>

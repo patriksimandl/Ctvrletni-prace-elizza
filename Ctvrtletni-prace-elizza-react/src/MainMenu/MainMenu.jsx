@@ -7,10 +7,12 @@ import './MainMenu.css'
 export const items = ['Mládež', 'Uplynulé sezóny',  'Zápisy výboru a turnaje', 'Kontakty'];
 
 export function MainMenu() {
-  const [burgerMenuActive,setBurgerMenuActive] = useState(false);  
+  const [burgerMenuActive,setBurgerMenuActive] =  useState(false);
+  
 
   const burgerMenuVisible = async( )=>{
-    setBurgerMenuActive(await !burgerMenuActive);
+    setBurgerMenuActive(!burgerMenuActive);
+    
   }
 
   useEffect(()=>{
@@ -26,7 +28,7 @@ export function MainMenu() {
       
 
       <div className="main-menu-right-container">
-        <div className={`burger-menu-c ${burgerMenuActive?'' : 'burger-menu-active' }`}
+        <div className={`burger-menu-c ${burgerMenuActive===true?'burger-menu-active' :''  }`}
           onClick={burgerMenuVisible}
         >
           <div className='burger-menu-block burger-menu-block1'></div>
@@ -57,7 +59,9 @@ export function MainMenu() {
           <NavLink 
             className='dropdown-link'
             key={item}
+            onClick={burgerMenuVisible}
             to={`/${item.toLowerCase()}`} 
+            
           >
             
           {item}

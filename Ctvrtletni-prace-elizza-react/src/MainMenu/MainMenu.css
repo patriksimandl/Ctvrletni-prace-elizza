@@ -140,6 +140,7 @@
 	font-weight: 500;
 	padding-bottom: 12px;
 	align-items: center;
+	transform: translateY(-100%);
 	transition: transform .1s;
 	/*it needs to display none to not be viisible and then turn into fixed flexbox*/
 }
@@ -148,7 +149,7 @@
 .dropdown-links-container-active{
 	display: flex;
 	height: auto;
-	transform: translateY(-100%);
+	transform: translateY(0%);
 }
 
 .dropdown-link{
