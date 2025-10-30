@@ -37,7 +37,7 @@ export function MainMenu() {
         </div>
         
         
-        <div></div>
+        
         {items.map((item)=>{
           return(
             <NavLink 
