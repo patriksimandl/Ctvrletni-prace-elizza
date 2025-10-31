@@ -1,7 +1,7 @@
 .kontaky-page-container{
   display: flex;
   flex-direction: column;
-  margin-top: 140px;
+  padding-top: 43px
 }
 
 .kontakty-data-container{
@@ -34,7 +34,7 @@
 }
 
 .data-item-name{
-  color: rgba(0, 128, 0, 0.616);
+  color: rgba(0, 128, 0, 0.878);  
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 10px;
