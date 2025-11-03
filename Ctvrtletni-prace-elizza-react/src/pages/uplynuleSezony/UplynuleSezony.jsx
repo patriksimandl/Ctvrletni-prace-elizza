@@ -1,17 +1,27 @@
 import { MainMenu } from "../../MainMenu/MainMenu"
 import { BottomMenu } from "../../BottomMenu/BottomMenu"
 import './UplynuleSezony.css'
+import maLong from '../../assets/Images/Malong-celebration.avif';
+import shareIcon from '../../assets/icons/share-icon.svg';
+import photoIcon from '../../assets/icons/photo-album-icon.svg'
+import { Post } from "./Post";
+import { uplynuleSezonyContent } from "../../data/uplynuleSezony"; 
 
-export function UplynuleSezony () {
-  return(
+export function UplynuleSezony() {
+  
+  
+  return (
     <>
       <title>Uplynulé sezóny</title>
       <MainMenu />
       <div className="uplynule-sezony-container">
-        <div>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nisi voluptatum nemo repellendus beatae aspernatur, fugit quaerat nostrum sint cumque praesentium, suscipit inventore corrupti excepturi velit tempora sapiente a eveniet.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aliquid suscipit aut sint dicta possimus minima fuga iste cumque est similique, itaque quia vero, voluptas a inventore sed modi minus!
-        </div>
+        {uplynuleSezonyContent.map((item)=>{
+          console.log(item.textContent);
+          return(
+            <Post image={item.image} header={item.header} textContent={item.textContent} nic='nic' />
+          )
+        })}
+        
 
       </div>
       <BottomMenu />

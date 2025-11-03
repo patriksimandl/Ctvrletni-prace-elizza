@@ -1,5 +1,11 @@
 .uplynule-sezony-container{
-  margin: 0  20%;
-  margin-top: 97px;
+  margin: 0  15%;
+  margin-top: 130px;
+}
 
+@media (max-width: 880px) {
+  .uplynule-sezony-container{
+    margin: 0 10%;
+    margin-top: 120px;
+  }
 }

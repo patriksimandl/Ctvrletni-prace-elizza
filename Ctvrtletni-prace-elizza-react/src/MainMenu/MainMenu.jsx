@@ -16,7 +16,6 @@ export function MainMenu() {
   }
 
   useEffect(()=>{
-    console.log(burgerMenuActive);
   },[burgerMenuActive])
 
   return (

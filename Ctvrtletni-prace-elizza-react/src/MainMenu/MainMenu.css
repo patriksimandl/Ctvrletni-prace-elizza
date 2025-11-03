@@ -68,7 +68,6 @@
 	position: absolute;
 	top: 36px;
 	
-	
 }
 
 .burger-menu-active .burger-menu-block1{
@@ -181,13 +180,13 @@
 	
 }
 
-@media (min-width: 801px){
+@media (min-width: 881px){
 	.dropdown-links-container{
 		display: none;
 	}
 }
 
-@media  (max-width: 800px){
+@media  (max-width: 880px){
 	
 	.burger-menu-c{
 		display: flex;
