@@ -15,9 +15,9 @@ function App() {
     <Routes>
       <Route index element={<HomePage />}/>
       <Route path='/mládež' element={<Mladez />}/>
-      <Route path='/zápisy výboru a turnaje' element={<ZapisyVyboru winWidth={winWidth} setWinWidth={setWinWidth}/>}/>
+      <Route path='/Zápisy výboru' element={<ZapisyVyboru winWidth={winWidth} setWinWidth={setWinWidth}/>}/>
       <Route path='/uplynulé sezóny' element={<UplynuleSezony />}/>
-      <Route path='/zápisy výboru a turnaje/:year' element={<Zapisy />}/>
+      <Route path='/Zápisy výboru/:year' element={<Zapisy />}/>
 
       <Route path='/kontakty' element={<Kontaky />}/>
     </Routes>

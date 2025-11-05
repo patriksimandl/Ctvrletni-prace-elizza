@@ -4,7 +4,7 @@ import ElizzaLogo from '../assets/elizza logo.jpg'
 import burgerMenu from '../assets/icons/burger-menu.svg'
 import './MainMenu.css'
 
-export const items = ['Mládež', 'Uplynulé sezóny',  'Zápisy výboru a turnaje', 'Kontakty'];
+export const items = [/*'Mládež'*/, 'Uplynulé sezóny',  'Zápisy výboru', 'Kontakty'];
 
 export function MainMenu() {
   const [burgerMenuActive,setBurgerMenuActive] =  useState(false);

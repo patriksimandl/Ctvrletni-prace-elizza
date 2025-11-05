@@ -18,7 +18,7 @@ export function UplynuleSezony() {
         {uplynuleSezonyContent.map((item)=>{
           console.log(item.textContent);
           return(
-            <Post image={item.image} header={item.header} textContent={item.textContent} nic='nic' />
+            <Post image={item.image} header={item.header} textContent={item.textContent} />
           )
         })}
         

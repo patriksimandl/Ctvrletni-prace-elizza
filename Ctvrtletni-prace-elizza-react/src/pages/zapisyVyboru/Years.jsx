@@ -42,7 +42,7 @@ export function Years({ year,winWidth }) {
       onMouseLeave={changeHover}
       ref={yearElement}
       className='year-link'
-      to={`/zápisy výboru a turnaje/${year}`}
+      to={`/Zápisy výboru/${year}`}
     >
       <span className='year-link-year'>{year}</span>
       <img 
