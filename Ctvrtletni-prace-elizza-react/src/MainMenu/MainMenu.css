@@ -160,12 +160,12 @@
 	display: flex;
 	padding: 9px;
 	transition: color .2s;
-
+	position: relative;
 }
 
 .dropdown-link:hover{
-	border-bottom: 3.5px solid rgb(0, 99, 25);
-	padding-bottom:6px;
+	border-bottom: 3px solid rgb(0, 99, 25);
+	padding-bottom:6.5px;
 	color: 	 rgb(0, 99, 25);
 
 }

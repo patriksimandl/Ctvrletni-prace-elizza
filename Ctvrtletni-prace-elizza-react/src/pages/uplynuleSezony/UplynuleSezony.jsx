@@ -4,7 +4,7 @@ import './UplynuleSezony.css'
 import maLong from '../../assets/Images/Malong-celebration.avif';
 import shareIcon from '../../assets/icons/share-icon.svg';
 import photoIcon from '../../assets/icons/photo-album-icon.svg'
-import { Post } from "./Post";
+import { Post } from "../../shared/Post";
 import { uplynuleSezonyContent } from "../../data/uplynuleSezony"; 
 
 export function UplynuleSezony() {

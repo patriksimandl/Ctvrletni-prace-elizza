@@ -39,6 +39,19 @@
   filter: invert();
 }
 
+@media (max-width: 880px) {
+  .year-link-arrow-image{
+    display: none;
+  }
+  .year-link{
+    justify-content: center;
+    
+  }
+  .year-link-year{
+    margin-left: 0;
+  }
+}
+
 
 
 /*@keyframes arrowMove{/*it is like write animation timeline => it sets keyframes of animation*/

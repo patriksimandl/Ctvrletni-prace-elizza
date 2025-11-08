@@ -6,11 +6,11 @@
 
 .gradiant{
   width: 100%;
-  height: 450px;
+  height: 230px;
   position: absolute;
-  top:-43px;
+  top:-40px;
   left: 0;
-  background-image: linear-gradient(to top,transparent , white);
+  background-image: linear-gradient(to top,transparent , rgba(255, 255, 255, 0.579));
   z-index: 1;
 }
 
@@ -19,19 +19,20 @@
   width: 100%;
   position: absolute;
   background-image: linear-gradient(to bottom, transparent,rgba(0, 90, 0, 0.979));
-  top:454px;
+  top: 302px;
   z-index: 0;
 }
 
 
 
 .background-image{
-  top: -43px;
+  margin-top: -10px;
   z-index: -2;
   zoom: .2;
   width: 100%;
   object-fit: cover;
-  height: 4250px;
+  /*height: 4250px;*/
+  height: 3500px;
   filter: grayscale(100%)
   blur(10px);
   opacity: .40;
@@ -90,4 +91,19 @@
   opacity: 1;
   height: 25px;
   filter: none;
+}
+
+@media(max-width: 880px){
+  .background-image{
+    margin-top: -100px ;
+  }
+
+  .green-gradiant{
+    top: 284px;
+  }
+  .button:hover{
+    background-color: inherit;
+    box-shadow: 0;
+    color: inherit;
+  }
 }

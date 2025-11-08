@@ -1,7 +1,7 @@
 import { BottomMenu } from "../../BottomMenu/BottomMenu"
 import { MainMenu } from "../../MainMenu/MainMenu"
 import { homeContent } from "../../data/home"
-import { Post } from "../uplynuleSezony/Post"
+import { Post } from "../../shared/Post"
 import './HomePage.css'
 
 export function HomePage() {

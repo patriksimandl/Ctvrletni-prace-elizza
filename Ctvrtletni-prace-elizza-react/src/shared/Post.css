@@ -20,6 +20,10 @@
 
 }
 
+.post-content-container-without-image{
+  width: 100%;
+}
+
 .post-header{
   margin-top: 10px;
   font-weight: 700;
