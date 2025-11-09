@@ -4,7 +4,6 @@ import shareIcon from '../assets/icons/share-icon.svg';
 import photoIcon from '../assets/icons/photo-album-icon.svg'
 
 export function Post({ image, header, textContent }) {
-  console.log(image);
   return (
     <div className="post-container">
       {image === '' || image === undefined ?

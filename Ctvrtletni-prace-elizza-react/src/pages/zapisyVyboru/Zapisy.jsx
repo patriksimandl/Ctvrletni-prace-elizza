@@ -5,7 +5,6 @@ import OpenInNewIcon from '../../assets/icons/Open-in-new-icon.svg'
 import './Zapisy.css'
 import Harimoto from '../../assets/Images/harimoto-celebration.avif'
 import { BottomMenu } from '../../BottomMenu/BottomMenu';
-import Malong from '../../assets/Images/Malong-celebration.avif'
 
 
 export function Zapisy() {

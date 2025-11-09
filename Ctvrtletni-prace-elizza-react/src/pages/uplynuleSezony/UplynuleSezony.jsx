@@ -16,7 +16,7 @@ export function UplynuleSezony() {
       <MainMenu />
       <div className="uplynule-sezony-container">
         {uplynuleSezonyContent.map((item)=>{
-          console.log(item.textContent);
+          
           return(
             <Post image={item.image} header={item.header} textContent={item.textContent} />
           )
